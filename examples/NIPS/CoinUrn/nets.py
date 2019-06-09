@@ -3,7 +3,7 @@ import torch.optim as optim
 import torch.nn as nn
 from torch.autograd import Variable
 from network import Network
-from examples.MNIST.mnist import MNIST_Net, neural_predicate
+from examples.NIPS.MNIST.mnist import MNIST_Net, neural_predicate
 
 
 class FC(nn.Module):
@@ -18,11 +18,11 @@ class FC(nn.Module):
         return x
 
 
-def colour_predicate(net, colour):
+def colour_predicate(net, *colour):
     d = torch.FloatTensor(colour)
     d = Variable(d.unsqueeze(0))
     outputs = net.net(d)
-    return outputs.squeeze(0),()
+    return outputs.squeeze(0)
 
 
 coin_network = MNIST_Net(2)

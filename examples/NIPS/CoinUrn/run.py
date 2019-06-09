@@ -1,5 +1,5 @@
 from train import train_model
-from examples.CoinUrn.network import colour_net, coin_net
+from examples.NIPS.CoinUrn.nets import colour_net, coin_net
 from data_loader import load
 from optimizer import SGD
 from model import Model
