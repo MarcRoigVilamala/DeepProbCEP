@@ -1,0 +1,16 @@
+addition(49949,24721,1).
+addition(31195,40635,1).
+addition(40746,32224,1).
+addition(28583,30335,2).
+addition(45608,32654,2).
+addition(26859,24968,2).
+addition(2355,17462,1).
+addition(10188,51001,2).
+addition(646,36764,2).
+addition(30055,57798,2).
+addition(24085,42894,1).
+addition(20517,35934,2).
+addition(28000,48099,2).
+addition(5375,53460,1).
+addition(59854,36657,2).
+addition(27332,7185,1).
