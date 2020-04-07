@@ -1,0 +1,7 @@
+multilabel(0, a).
+multilabel(0, b).
+multilabel(1, a).
+multilabel(1, c).
+multilabel(2, b).
+multilabel(2, c).
+multilabel(3, a).

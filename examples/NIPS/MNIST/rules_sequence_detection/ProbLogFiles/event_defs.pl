@@ -1,6 +1,6 @@
 nn(mnist_net,[X],Y,[0,1,2,3,4,5,6,7,8,9]) :: digit(X,Y).
 
-t(0.5)::initiatedAt(sequence0 = true, T) :-
+initiatedAt(sequence0 = true, T) :-
     happensAt(X, T),
     digit(X, 0),
     allTimeStamps(Timestamps),
@@ -9,15 +9,15 @@ t(0.5)::initiatedAt(sequence0 = true, T) :-
     happensAt(Xprev, Tprev),
     digit(Xprev, 0).
 
-t(0.5)::initiatedAt(sequence0 = true, T) :-
+initiatedAt(sequence0 = true, T) :-
     happensAt(X, T),
-    digit(X, 1),
+    digit(X, 0),
     allTimeStamps(Timestamps),
     previousTimeStamp(T, Timestamps, Tprev),
     previousTimeStamp(Tprev, Timestamps, Tprevprev),
     Tprevprev >= 0,
     happensAt(Xprev, Tprevprev),
-    digit(Xprev, 1).
+    digit(Xprev, 0).
 
 initiatedAt(sequence0 = false, T) :-
     happensAt(X, T),

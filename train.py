@@ -101,8 +101,8 @@ def train_model(model,queries,nr_epochs,optimizer, loss_function = train, test_i
     logger = Logger()
     start = time.time()
     print("Training for {} epochs ({} iterations).".format(nr_epochs,nr_epochs*len(queries)))
-    if test is not None:
-        logger.log_list(i,test(model))
+    # if test is not None:
+    #     logger.log_list(i,test(model))
     for epoch in range(nr_epochs):
         epoch_start = time.time()
         if interrupt:

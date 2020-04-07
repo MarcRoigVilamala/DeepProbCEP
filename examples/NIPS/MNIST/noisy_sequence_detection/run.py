@@ -1,5 +1,8 @@
 import os
+import re
 import sys
+
+import click
 
 from examples.NIPS.ActivityDetection.prob_ec_testing import test
 from examples.NIPS.MNIST.mnist import MNIST_Net, test_MNIST, neural_predicate
@@ -68,26 +71,46 @@ def run(training_data, test_data, problog_files, problog_train_files=(), problog
     )
 
 
-if __name__ == '__main__':
+@click.command()
+@click.option('--scenario', default='')
+@click.option('--noise', default='')
+def execute_scenarios(scenario, noise):
     for folder in sorted(os.listdir(os.curdir)):
-        # if folder != 'scenario4':
-        #     continue
-
-        if folder.startswith('scenario'):
+        if folder.startswith('scenario') and re.search(scenario, folder):
             print("#######################################################################################")
             print(folder)
+
+            prob_ec_cached = '{}/prob_ec_cached.pl'.format(folder)
+            if not os.path.isfile(prob_ec_cached):
+                prob_ec_cached = 'ProbLogFiles/prob_ec_cached.pl'
+
+            event_defs = '{}/event_defs.pl'.format(folder)
+            if not os.path.isfile(event_defs):
+                event_defs = 'ProbLogFiles/event_defs.pl'
+
             for subfolder in sorted(os.listdir(folder)):
                 # if subfolder != 'noise_1_00':
                 #     continue
 
-                if os.path.isdir('{}/{}'.format(folder, subfolder)):
+                if re.search(noise, subfolder) and os.path.isdir('{}/{}'.format(folder, subfolder)):
                     print('===================================================================================')
                     print(subfolder)
 
                     run(
                         '{}/{}/init_train_data.txt'.format(folder, subfolder),
                         '{}/{}/init_digit_test_data.txt'.format(folder, subfolder),
-                        ['ProbLogFiles/prob_ec_cached.pl', 'ProbLogFiles/event_defs.pl'],
-                        problog_train_files=['{}/{}/in_train_data.txt'.format(folder, subfolder)],
-                        problog_test_files=['{}/{}/in_test_data.txt'.format(folder, subfolder)]
+                        [
+                            prob_ec_cached,
+                            event_defs
+                        ],
+                        problog_train_files=[
+                            '{}/{}/in_train_data.txt'.format(folder, subfolder)
+                        ],
+                        problog_test_files=[
+                            '{}/{}/in_test_data.txt'.format(folder, subfolder)
+                        ]
                     )
+
+
+if __name__ == '__main__':
+    execute_scenarios()

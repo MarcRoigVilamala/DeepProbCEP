@@ -37,6 +37,22 @@ CONFUSION_INDEX = {
         '7': 7,
         '8': 8,
         '9': 9,
+    },
+    'sound': {
+        'air_conditioner': 0,
+        'car_horn': 1,
+        'children_playing': 2,
+        'dog_bark': 3,
+        'drilling': 4,
+        'engine_idling': 5,
+        'gun_shot': 6,
+        'jackhammer': 7,
+        'siren': 8,
+        'street_music': 9,
+    },
+    'shots': {
+        'start': 0,
+        'other': 1,
     }
 }
 
@@ -131,7 +147,9 @@ TEST_METHODS = {
     'happensAt': (get_target_happens_at, query_transformation_happens_at, get_result_happens_at),
     'initiatedAt': (get_target_initiated_at, query_transformation_initiated_at, get_result_initiated_at),
     'holdsAt': (get_target_holds_at, query_transformation_holds_at, get_result_holds_at),
-    'digit': (get_target_digit, query_transformation_digit, get_result_digit)
+    'digit': (get_target_digit, query_transformation_digit, get_result_digit),
+    'sound': (get_target_digit, query_transformation_digit, get_result_digit),
+    'shots': (get_target_digit, query_transformation_digit, get_result_digit),
 }
 
 
