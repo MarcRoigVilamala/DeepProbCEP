@@ -1,0 +1,489 @@
+ssh://roigvilamalam@dais-2.admin.cf.ac.uk:22/home/roigvilamalam/.pyenv/versions/sound/bin/python -u /home/roigvilamalam/projects/deepproblog/examples/NIPS/UrbanSounds8K/SequenceDetection/run.py
+/home/roigvilamalam/.pyenv/versions/sound/lib/python3.6/site-packages/pandas/compat/__init__.py:85: UserWarning: Could not import the lzma module. Your installed Python is incomplete. Attempting to use lzma compression will result in a RuntimeError.
+  warnings.warn(msg)
+Training for 10 epochs (74720 iterations).
+Epoch 1
+Iteration:  500 	Average Loss:  2.1571201570834395
+Iteration:  1000 	Average Loss:  1.6692267513729062
+Iteration:  1500 	Average Loss:  1.5149610140489638
+Iteration:  2000 	Average Loss:  1.5342116211199666
+Iteration:  2500 	Average Loss:  1.3982071233630755
+Iteration:  3000 	Average Loss:  1.2974555534405552
+Iteration:  3500 	Average Loss:  1.1798119750155043
+Iteration:  4000 	Average Loss:  1.2200151195446476
+Iteration:  4500 	Average Loss:  1.173284288897757
+Iteration:  5000 	Average Loss:  1.1196760151585867
+Iteration:  5500 	Average Loss:  1.0898181834313512
+Iteration:  6000 	Average Loss:  1.1760573633841769
+Iteration:  6500 	Average Loss:  1.0679143705523872
+Iteration:  7000 	Average Loss:  1.026703928449939
+Writing snapshot to SequenceDetectionSnapshots/model_iter_007472.mdl
+100%|████████████████████████████████████████| 910/910 [00:06<00:00, 142.87it/s]
+sound
+[[73  0  0  1 12  4  0  9  1  0]
+ [ 0  2  1  0  1  0  0  0 16  7]
+ [ 9  0 59  8  2  0  0  0  5 17]
+ [13  0  4 56  2  0  0  0  3  6]
+ [ 1  2  0  1 80  0  0  2  8  2]
+ [14  0  0  0  1 67  0  5  1  5]
+ [ 0  0  0  0  0  0 27  0  0  0]
+ [11  0  0  0  8  7  8 61  0  0]
+ [24  0  0  3  1  1  0  0 53  1]
+ [ 0  3  4  1  1  0  0  0  6 85]]
+F1 sound: [0.59591837 0.11764706 0.70238095 0.72727273 0.78431373 0.77906977
+ 0.87096774 0.70930233 0.60227273 0.76233184]
+Accuracy sound: 0.6993788819875777
+/home/roigvilamalam/projects/deepproblog/test_utils.py:44: RuntimeWarning: invalid value encountered in true_divide
+  recall = tp / (tp + fn)
+/home/roigvilamalam/projects/deepproblog/test_utils.py:43: RuntimeWarning: invalid value encountered in true_divide
+  precision = tp / (tp + fp)
+initiatedAt
+[[ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 4  0  5  0  0  0  0  0  0  0  0]
+ [ 7  0  0  5  0  0  0  0  0  0  0]
+ [11  0  0  0  6  0  0  0  0  0  0]
+ [ 5  0  0  0  0  7  0  0  0  0  0]
+ [ 3  0  0  0  0  0  6  0  0  0  0]
+ [ 7  0  2  0  0  0  0  7  0  0  0]
+ [ 1  0  0  0  0  0  0  0 14  0  0]
+ [ 0  0  0  0  0  0  0  0  0  1  0]
+ [ 8  0  0  0  0  0  0  0  0  0  6]]
+F1 initiatedAt: [       nan        nan 0.625      0.58823529 0.52173913 0.73684211
+ 0.8        0.60869565 0.96551724 1.         0.6       ]
+Accuracy initiatedAt: 0.5428571428571428
+Epoch time:  37.59626078605652
+Epoch 2
+Iteration:  7500 	Average Loss:  1.0585805163094422
+Iteration:  8000 	Average Loss:  0.9691682921553325
+Iteration:  8500 	Average Loss:  1.0327533539978992
+Iteration:  9000 	Average Loss:  0.9218968780294758
+Iteration:  9500 	Average Loss:  0.98698340210011
+Iteration:  10000 	Average Loss:  1.0096997105608647
+Iteration:  10500 	Average Loss:  1.009118953535724
+Iteration:  11000 	Average Loss:  0.8854650981761004
+Iteration:  11500 	Average Loss:  0.9751398378785914
+Iteration:  12000 	Average Loss:  0.9675772360164528
+Iteration:  12500 	Average Loss:  0.9941225597517803
+Iteration:  13000 	Average Loss:  1.0693424034217927
+Iteration:  13500 	Average Loss:  1.0014230031426221
+Iteration:  14000 	Average Loss:  0.8316104849166112
+Iteration:  14500 	Average Loss:  1.071745996995575
+Writing snapshot to SequenceDetectionSnapshots/model_iter_014944.mdl
+100%|████████████████████████████████████████| 910/910 [00:07<00:00, 117.20it/s]
+sound
+[[71  0  5  0  9  6  0  9  0  0]
+ [ 1  6  5  0  1  0  0  1  9  4]
+ [ 6  0 92  0  2  0  0  0  0  0]
+ [12  0 15 51  2  1  0  0  2  1]
+ [ 4  1  6  0 81  0  0  1  2  1]
+ [13  0  2  0  0 48  0 30  0  0]
+ [ 0  0  0  0  0  0 27  0  0  0]
+ [12  0  0  0  4  0  8 70  0  1]
+ [19  0 11  8  1  0  0  1 43  0]
+ [ 0  7 28  1  2  0  0  0  4 58]]
+F1 sound: [0.59663866 0.29268293 0.6969697  0.70833333 0.81818182 0.64864865
+ 0.87096774 0.6763285  0.6013986  0.7030303 ]
+Accuracy sound: 0.6795031055900621
+initiatedAt
+[[ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 3  0  4  0  0  0  1  1  0  0  0]
+ [ 7  0  0  3  2  0  0  0  0  0  0]
+ [ 8  0  0  0  9  0  0  0  0  0  0]
+ [ 5  1  0  0  0  4  0  2  0  0  0]
+ [ 3  0  0  0  0  0  6  0  0  0  0]
+ [ 3  0  0  0  0  0  0 13  0  0  0]
+ [ 1  0  0  0  0  0  0  0 14  0  0]
+ [ 0  0  0  0  0  0  0  0  0  1  0]
+ [ 8  0  0  0  0  0  0  0  0  0  6]]
+F1 initiatedAt: [       nan        nan 0.61538462 0.4        0.64285714 0.5
+ 0.75       0.8125     0.96551724 1.         0.6       ]
+Accuracy initiatedAt: 0.5714285714285714
+Epoch time:  38.93661570549011
+Epoch 3
+Iteration:  15000 	Average Loss:  0.9588877402142035
+Iteration:  15500 	Average Loss:  0.8619351542855026
+Iteration:  16000 	Average Loss:  0.866699630952171
+Iteration:  16500 	Average Loss:  0.8884423284235169
+Iteration:  17000 	Average Loss:  0.939798788472832
+Iteration:  17500 	Average Loss:  0.9321212636416875
+Iteration:  18000 	Average Loss:  0.8752260609911506
+Iteration:  18500 	Average Loss:  0.9430457470027007
+Iteration:  19000 	Average Loss:  0.912009204176906
+Iteration:  19500 	Average Loss:  0.8823345261690505
+Iteration:  20000 	Average Loss:  0.8372126430389942
+Iteration:  20500 	Average Loss:  0.9382051587260956
+Iteration:  21000 	Average Loss:  1.0483531478590271
+Iteration:  21500 	Average Loss:  0.9259161248440752
+Iteration:  22000 	Average Loss:  0.9005465865737501
+Writing snapshot to SequenceDetectionSnapshots/model_iter_022416.mdl
+100%|████████████████████████████████████████| 910/910 [00:07<00:00, 119.66it/s]
+sound
+[[28  2 16  4  7 14  0 28  0  1]
+ [ 1 15  3  0  1  0  0  0  2  5]
+ [ 2  1 89  1  2  2  0  0  1  2]
+ [ 4  1 17 51  2  0  0  0  4  5]
+ [ 0  4  7  0 72  1  0  6  2  4]
+ [ 3  1  0  0  1 74  0 13  0  1]
+ [ 0  0  3  0  0  0 24  0  0  0]
+ [ 2  0  4  0  1 15  0 72  0  1]
+ [ 9  2 18  7  1  0  0  1 44  1]
+ [ 0 12  9  1  0  0  0  0  1 77]]
+F1 sound: [0.37583893 0.46153846 0.66917293 0.68918919 0.78688525 0.74371859
+ 0.94117647 0.66976744 0.64233577 0.78172589]
+Accuracy sound: 0.6782608695652174
+initiatedAt
+[[ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 4  0  4  0  0  0  0  1  0  0  0]
+ [ 4  0  0  7  1  0  0  0  0  0  0]
+ [12  0  0  0  5  0  0  0  0  0  0]
+ [ 6  0  0  0  0  6  0  0  0  0  0]
+ [ 8  0  0  1  0  0  0  0  0  0  0]
+ [ 3  0  0  0  0  0  0 13  0  0  0]
+ [ 3  0  0  0  0  0  0  0 12  0  0]
+ [ 0  0  0  0  0  0  0  0  0  1  0]
+ [ 6  0  0  0  0  0  0  1  0  0  7]]
+F1 initiatedAt: [       nan        nan 0.61538462 0.7        0.43478261 0.66666667
+        nan 0.83870968 0.88888889 1.         0.66666667]
+Accuracy initiatedAt: 0.5238095238095238
+Epoch time:  38.64472579956055
+Epoch 4
+Iteration:  22500 	Average Loss:  0.9536863520067902
+Iteration:  23000 	Average Loss:  0.8421147288603855
+Iteration:  23500 	Average Loss:  0.8633955321234678
+Iteration:  24000 	Average Loss:  1.0036019482597467
+Iteration:  24500 	Average Loss:  0.8606211204325175
+Iteration:  25000 	Average Loss:  0.8739727420729922
+Iteration:  25500 	Average Loss:  0.850101958021132
+Iteration:  26000 	Average Loss:  0.9286071051526025
+Iteration:  26500 	Average Loss:  0.8076301978340876
+Iteration:  27000 	Average Loss:  0.8067912721209491
+Iteration:  27500 	Average Loss:  0.8617009324123407
+Iteration:  28000 	Average Loss:  0.9778707708571089
+Iteration:  28500 	Average Loss:  0.894680332083717
+Iteration:  29000 	Average Loss:  0.8115299781832039
+Iteration:  29500 	Average Loss:  0.9005440521102204
+Writing snapshot to SequenceDetectionSnapshots/model_iter_029888.mdl
+100%|████████████████████████████████████████| 910/910 [00:07<00:00, 119.02it/s]
+sound
+[[49  0  4  6  2 25  0 14  0  0]
+ [ 2  5  4  0  0  1  0  1  9  5]
+ [ 3  1 81  4  0  3  0  3  1  4]
+ [ 6  0  9 59  3  2  0  1  2  2]
+ [ 1  2  1  0 75 10  0  6  0  1]
+ [ 3  0  0  0  0 90  0  0  0  0]
+ [ 0  0  2  0  0  0 25  0  0  0]
+ [ 4  0  0  4  2  7  0 77  0  1]
+ [16  0  9  7  1  1  0  0 49  0]
+ [ 0  0  9  3  2  1  0  0  5 80]]
+F1 sound: [0.5326087  0.28571429 0.73972603 0.70658683 0.82872928 0.77253219
+ 0.96153846 0.78172589 0.65771812 0.82901554]
+Accuracy sound: 0.7329192546583851
+initiatedAt
+[[ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 3  0  6  0  0  0  0  0  0  0  0]
+ [ 0  0  0 12  0  0  0  0  0  0  0]
+ [11  0  0  0  6  0  0  0  0  0  0]
+ [ 7  0  0  0  0  4  0  1  0  0  0]
+ [ 8  0  0  1  0  0  0  0  0  0  0]
+ [ 6  0  0  0  0  0  0 10  0  0  0]
+ [ 4  0  0  0  0  0  0  0 11  0  0]
+ [ 0  0  0  0  0  0  0  0  0  1  0]
+ [ 7  0  0  0  0  0  0  0  0  0  7]]
+F1 initiatedAt: [       nan        nan 0.8        0.96       0.52173913 0.5
+        nan 0.74074074 0.84615385 1.         0.66666667]
+Accuracy initiatedAt: 0.5428571428571428
+Epoch time:  37.47079539299011
+Epoch 5
+Iteration:  30000 	Average Loss:  0.8279111511861234
+Iteration:  30500 	Average Loss:  0.8289434927078232
+Iteration:  31000 	Average Loss:  0.7821971940711369
+Iteration:  31500 	Average Loss:  0.79142173456636
+Iteration:  32000 	Average Loss:  0.7746458456794584
+Iteration:  32500 	Average Loss:  0.7649035493484662
+Iteration:  33000 	Average Loss:  0.8301522959397848
+Iteration:  33500 	Average Loss:  0.9089499047816394
+Iteration:  34000 	Average Loss:  0.8570787216512994
+Iteration:  34500 	Average Loss:  0.897865462777971
+Iteration:  35000 	Average Loss:  0.8738460402783305
+Iteration:  35500 	Average Loss:  0.926830595306568
+Iteration:  36000 	Average Loss:  0.8242203148514058
+Iteration:  36500 	Average Loss:  0.9024132333048767
+Iteration:  37000 	Average Loss:  0.8468385836821379
+Writing snapshot to SequenceDetectionSnapshots/model_iter_037360.mdl
+100%|████████████████████████████████████████| 910/910 [00:06<00:00, 137.62it/s]
+sound
+[[61  0  5  5  7 16  0  6  0  0]
+ [ 0 10  4  0  0  0  0  0 10  3]
+ [ 6  1 91  0  1  0  0  0  0  1]
+ [ 6  0 17 50  1  0  0  0  8  2]
+ [ 2  4  5  0 76  1  0  3  4  1]
+ [11  1  0  0  0 72  0  8  0  1]
+ [ 0  0  3  0  0  0 24  0  0  0]
+ [ 6  0  3  1  3  1  0 79  1  1]
+ [10  1 11  4  0  1  0  0 56  0]
+ [ 0  5 15  1  1  0  0  0  5 73]]
+F1 sound: [0.6039604  0.40816327 0.71653543 0.68965517 0.82162162 0.7826087
+ 0.94117647 0.82722513 0.67065868 0.8021978 ]
+Accuracy sound: 0.7354037267080745
+initiatedAt
+[[ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 3  0  5  0  0  0  0  1  0  0  0]
+ [ 2  0  0 10  0  0  0  0  0  0  0]
+ [ 8  0  0  0  9  0  0  0  0  0  0]
+ [ 6  0  0  0  0  5  0  1  0  0  0]
+ [ 9  0  0  0  0  0  0  0  0  0  0]
+ [ 4  0  0  0  0  0  0 12  0  0  0]
+ [ 2  0  0  0  0  0  0  0 13  0  0]
+ [ 0  0  0  0  0  0  0  0  0  1  0]
+ [ 5  0  0  0  0  0  0  0  0  0  9]]
+F1 initiatedAt: [       nan        nan 0.71428571 0.90909091 0.69230769 0.58823529
+        nan 0.8        0.92857143 1.         0.7826087 ]
+Accuracy initiatedAt: 0.6095238095238096
+Epoch time:  37.48047733306885
+Epoch 6
+Iteration:  37500 	Average Loss:  0.816376112145501
+Iteration:  38000 	Average Loss:  0.8190970944475978
+Iteration:  38500 	Average Loss:  0.8106617855783631
+Iteration:  39000 	Average Loss:  0.861189277734052
+Iteration:  39500 	Average Loss:  0.8514356169332151
+Iteration:  40000 	Average Loss:  0.7805106563860458
+Iteration:  40500 	Average Loss:  0.8400679585231703
+Iteration:  41000 	Average Loss:  0.7938684914468528
+Iteration:  41500 	Average Loss:  0.7584115217679117
+Iteration:  42000 	Average Loss:  0.8117192254256168
+Iteration:  42500 	Average Loss:  0.6999647694566492
+Iteration:  43000 	Average Loss:  0.8931802242933162
+Iteration:  43500 	Average Loss:  0.7777076755932922
+Iteration:  44000 	Average Loss:  0.804432700706313
+Iteration:  44500 	Average Loss:  0.7942623249138194
+Writing snapshot to SequenceDetectionSnapshots/model_iter_044832.mdl
+100%|████████████████████████████████████████| 910/910 [00:07<00:00, 117.65it/s]
+sound
+[[62  0  2  6  5 18  0  6  0  1]
+ [ 0  1  1  0  1  0  0  0 16  8]
+ [ 5  0 74  4  2  3  0  0  1 11]
+ [ 4  1  9 57  2  1  0  0  5  5]
+ [ 1  3  3  0 70  3  0 12  2  2]
+ [ 6  0  0  0  0 85  0  0  0  2]
+ [ 0  0  0  1  0  0 25  1  0  0]
+ [ 8  1  0  2  2  1  0 80  0  1]
+ [ 9  0  5  9  1  1  0  0 57  1]
+ [ 0  0  7  0  0  0  0  0  6 87]]
+F1 sound: [0.63589744 0.06060606 0.73631841 0.6993865  0.78212291 0.82926829
+ 0.96153846 0.82474227 0.67058824 0.79816514]
+Accuracy sound: 0.7428571428571429
+initiatedAt
+[[ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 1  0  7  0  0  0  0  1  0  0  0]
+ [ 1  0  0 11  0  0  0  0  0  0  0]
+ [ 8  0  0  0  9  0  0  0  0  0  0]
+ [ 5  0  0  0  0  7  0  0  0  0  0]
+ [ 7  0  0  1  0  0  1  0  0  0  0]
+ [ 7  0  0  0  0  0  0  9  0  0  0]
+ [ 4  0  0  0  1  0  0  0 10  0  0]
+ [ 0  0  0  0  0  0  0  0  0  1  0]
+ [ 5  0  0  0  0  0  0  0  0  0  9]]
+F1 initiatedAt: [       nan        nan 0.875      0.91666667 0.66666667 0.73684211
+ 0.2        0.69230769 0.8        1.         0.7826087 ]
+Accuracy initiatedAt: 0.6095238095238096
+Epoch time:  39.07265019416809
+Epoch 7
+Iteration:  45000 	Average Loss:  0.8603103855484112
+Iteration:  45500 	Average Loss:  0.789971489841572
+Iteration:  46000 	Average Loss:  0.8369443013467349
+Iteration:  46500 	Average Loss:  0.7029920157009752
+Iteration:  47000 	Average Loss:  0.8410443968424135
+Iteration:  47500 	Average Loss:  0.7981001611052365
+Iteration:  48000 	Average Loss:  0.7886668800257409
+Iteration:  48500 	Average Loss:  0.7931217570440973
+Iteration:  49000 	Average Loss:  0.7690987379812074
+Iteration:  49500 	Average Loss:  0.7091044950227807
+Iteration:  50000 	Average Loss:  0.8162570878846981
+Iteration:  50500 	Average Loss:  0.8736468038453182
+Iteration:  51000 	Average Loss:  0.801893491246894
+Iteration:  51500 	Average Loss:  0.7512822346697687
+Iteration:  52000 	Average Loss:  0.8222562994817805
+Writing snapshot to SequenceDetectionSnapshots/model_iter_052304.mdl
+100%|████████████████████████████████████████| 910/910 [00:07<00:00, 118.49it/s]
+sound
+[[41  3  2  6  9 15  0 23  1  0]
+ [ 0 16  3  0  1  0  0  0  7  0]
+ [ 5  0 80  5  2  1  0  2  5  0]
+ [ 5  1  6 61  3  0  0  0  6  2]
+ [ 1  3  0  0 78  5  0  4  5  0]
+ [ 3  0  0  0  2 74  0 14  0  0]
+ [ 0  0  1  0  0  0 26  0  0  0]
+ [ 3  0  0  2  6  0  0 84  0  0]
+ [11  2  3  5  2  0  0  1 59  0]
+ [ 0 10 10  2  5  1  0  0  4 68]]
+F1 sound: [0.4852071  0.51612903 0.7804878  0.73939394 0.76470588 0.78306878
+ 0.98113208 0.75336323 0.69411765 0.8       ]
+Accuracy sound: 0.7291925465838509
+initiatedAt
+[[ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 2  0  7  0  0  0  0  0  0  0  0]
+ [ 3  0  0  9  0  0  0  0  0  0  0]
+ [ 6  0  0  0 11  0  0  0  0  0  0]
+ [ 6  0  0  0  0  5  0  1  0  0  0]
+ [ 8  0  0  0  0  0  1  0  0  0  0]
+ [ 7  0  0  0  0  0  0  9  0  0  0]
+ [ 2  0  0  0  0  0  0  0 13  0  0]
+ [ 0  0  0  0  0  0  0  0  0  1  0]
+ [ 6  0  0  0  0  0  0  0  0  0  8]]
+F1 initiatedAt: [       nan        nan 0.875      0.85714286 0.78571429 0.58823529
+ 0.2        0.69230769 0.92857143 1.         0.72727273]
+Accuracy initiatedAt: 0.6095238095238096
+Epoch time:  38.977582931518555
+Epoch 8
+Iteration:  52500 	Average Loss:  0.7501721535240183
+Iteration:  53000 	Average Loss:  0.7828495322863855
+Iteration:  53500 	Average Loss:  0.8273197793070877
+Iteration:  54000 	Average Loss:  0.7896399058026264
+Iteration:  54500 	Average Loss:  0.8016061368589062
+Iteration:  55000 	Average Loss:  0.836113103440785
+Iteration:  55500 	Average Loss:  0.7212231275305341
+Iteration:  56000 	Average Loss:  0.7122588293190442
+Iteration:  56500 	Average Loss:  0.7913903058467665
+Iteration:  57000 	Average Loss:  0.865672327534437
+Iteration:  57500 	Average Loss:  0.7340512246605317
+Iteration:  58000 	Average Loss:  0.9319214675184668
+Iteration:  58500 	Average Loss:  0.882371533384445
+Iteration:  59000 	Average Loss:  0.781992978352097
+Iteration:  59500 	Average Loss:  0.7512902190921595
+Writing snapshot to SequenceDetectionSnapshots/model_iter_059776.mdl
+100%|████████████████████████████████████████| 910/910 [00:06<00:00, 138.02it/s]
+sound
+[[57  0  3  7  9 20  0  4  0  0]
+ [ 2  8  4  0  1  0  0  0  6  6]
+ [ 4  1 88  0  2  1  0  0  0  4]
+ [ 5  1 14 53  2  0  1  0  4  4]
+ [ 1  3  9  0 77  0  0  3  2  1]
+ [11  1  0  0  0 77  0  3  0  1]
+ [ 0  0  1  0  0  0 26  0  0  0]
+ [ 5  0  3  1  3  1  2 79  0  1]
+ [11  2 12  6  2  1  0  0 49  0]
+ [ 0  6  9  0  2  0  0  0  1 82]]
+F1 sound: [0.58163265 0.32653061 0.72427984 0.70198675 0.79381443 0.79792746
+ 0.92857143 0.85869565 0.67586207 0.8241206 ]
+Accuracy sound: 0.7403726708074534
+initiatedAt
+[[ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 2  0  6  0  0  0  0  1  0  0  0]
+ [ 2  0  0 10  0  0  0  0  0  0  0]
+ [ 8  0  0  0  9  0  0  0  0  0  0]
+ [ 5  0  0  0  0  7  0  0  0  0  0]
+ [ 8  0  0  1  0  0  0  0  0  0  0]
+ [ 5  0  0  0  0  0  0 11  0  0  0]
+ [ 2  0  0  0  0  0  0  0 13  0  0]
+ [ 0  0  0  0  0  0  0  0  0  1  0]
+ [ 7  0  0  0  0  0  0  0  0  0  7]]
+F1 initiatedAt: [       nan        nan 0.8        0.86956522 0.69230769 0.73684211
+        nan 0.78571429 0.92857143 1.         0.66666667]
+Accuracy initiatedAt: 0.6095238095238096
+Epoch time:  37.701205015182495
+Epoch 9
+Iteration:  60000 	Average Loss:  0.771207578314942
+Iteration:  60500 	Average Loss:  0.7557293907131717
+Iteration:  61000 	Average Loss:  0.8378457968547601
+Iteration:  61500 	Average Loss:  0.7435213886859899
+Iteration:  62000 	Average Loss:  0.8052463600704057
+Iteration:  62500 	Average Loss:  0.7485689391830066
+Iteration:  63000 	Average Loss:  0.8449216368833832
+Iteration:  63500 	Average Loss:  0.878508169362407
+Iteration:  64000 	Average Loss:  0.7983279850950672
+Iteration:  64500 	Average Loss:  0.6205516359089935
+Iteration:  65000 	Average Loss:  0.7596182484332404
+Iteration:  65500 	Average Loss:  0.7854564571258292
+Iteration:  66000 	Average Loss:  0.6773868165860049
+Iteration:  66500 	Average Loss:  0.8990004731418626
+Iteration:  67000 	Average Loss:  0.678122865597014
+Writing snapshot to SequenceDetectionSnapshots/model_iter_067248.mdl
+100%|████████████████████████████████████████| 910/910 [00:06<00:00, 133.93it/s]
+sound
+[[59  0  1  7  9 13  0  9  0  2]
+ [ 1 13  2  0  0  0  0  0  2  9]
+ [ 4  5 68 12  2  1  0  0  0  8]
+ [ 2  0  4 62  3  0  0  0  4  9]
+ [ 3  5  1  2 78  1  0  3  0  3]
+ [10  1  0  0  0 79  0  1  0  2]
+ [ 0  0  1  0  0  0 26  0  0  0]
+ [ 3  0  0  2  5  1  0 82  0  2]
+ [ 9  1  2 11  1  1  0  0 41 17]
+ [ 0  6  3  2  0  0  0  0  0 89]]
+F1 sound: [0.61780105 0.44827586 0.74725275 0.68131868 0.80412371 0.83597884
+ 0.98113208 0.86315789 0.63076923 0.73858921]
+Accuracy sound: 0.7416149068322981
+initiatedAt
+[[ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 2  0  6  0  0  0  0  1  0  0  0]
+ [ 2  0  0 10  0  0  0  0  0  0  0]
+ [ 8  0  0  0  9  0  0  0  0  0  0]
+ [ 3  0  0  0  0  9  0  0  0  0  0]
+ [ 8  0  0  1  0  0  0  0  0  0  0]
+ [ 9  0  1  0  0  0  0  6  0  0  0]
+ [ 3  0  0  0  0  0  0  0 12  0  0]
+ [ 0  0  0  0  0  0  0  0  0  1  0]
+ [ 8  0  0  0  0  0  0  0  0  0  6]]
+F1 initiatedAt: [       nan        nan 0.75       0.86956522 0.69230769 0.85714286
+        nan 0.52173913 0.88888889 1.         0.6       ]
+Accuracy initiatedAt: 0.5619047619047619
+Epoch time:  37.74092221260071
+Epoch 10
+Iteration:  67500 	Average Loss:  0.7576401006297233
+Iteration:  68000 	Average Loss:  0.8156201792943195
+Iteration:  68500 	Average Loss:  0.7403103047591876
+Iteration:  69000 	Average Loss:  0.7249083688741633
+Iteration:  69500 	Average Loss:  0.7648924756548114
+Iteration:  70000 	Average Loss:  0.7703703318743036
+Iteration:  70500 	Average Loss:  0.6699918465514185
+Iteration:  71000 	Average Loss:  0.755720878504746
+Iteration:  71500 	Average Loss:  0.7983539945748093
+Iteration:  72000 	Average Loss:  0.6905402250499124
+Iteration:  72500 	Average Loss:  0.6770000296533957
+Iteration:  73000 	Average Loss:  0.8239879973861418
+Iteration:  73500 	Average Loss:  0.7888182148436164
+Iteration:  74000 	Average Loss:  0.7780463715111364
+Iteration:  74500 	Average Loss:  0.8128365869960492
+Writing snapshot to SequenceDetectionSnapshots/model_iter_074720.mdl
+100%|████████████████████████████████████████| 910/910 [00:07<00:00, 119.45it/s]
+sound
+[[51  0  5  5  8 19  0 11  0  1]
+ [ 2 11  4  0  1  1  0  0  4  4]
+ [ 5  3 82  1  1  1  0  1  0  6]
+ [ 2  0 22 47  4  0  0  0  3  6]
+ [ 3  4  5  0 67  3  0 11  1  2]
+ [ 9  0  0  0  0 78  0  4  0  2]
+ [ 0  0  1  0  0  0 26  0  0  0]
+ [ 3  0  5  0  1  0  0 86  0  0]
+ [11  2 15  7  2  1  0  1 39  5]
+ [ 0  6  7  0  2  0  0  0  1 84]]
+F1 sound: [0.5483871  0.41509434 0.66666667 0.65277778 0.73626374 0.79591837
+ 0.98113208 0.82296651 0.59541985 0.8       ]
+Accuracy sound: 0.7093167701863354
+initiatedAt
+[[ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 5  0  3  0  0  0  0  1  0  0  0]
+ [ 2  0  0 10  0  0  0  0  0  0  0]
+ [ 7  0  0  0 10  0  0  0  0  0  0]
+ [ 4  0  0  0  0  8  0  0  0  0  0]
+ [ 8  0  0  1  0  0  0  0  0  0  0]
+ [ 6  0  0  0  0  0  0 10  0  0  0]
+ [ 4  0  0  0  0  0  0  0 11  0  0]
+ [ 0  0  0  0  0  0  0  0  0  1  0]
+ [ 9  0  0  0  0  0  0  0  0  0  5]]
+F1 initiatedAt: [       nan        nan 0.5        0.86956522 0.74074074 0.8
+        nan 0.74074074 0.84615385 1.         0.52631579]
+Accuracy initiatedAt: 0.5523809523809524
+Epoch time:  38.35762143135071
+
+Process finished with exit code 0

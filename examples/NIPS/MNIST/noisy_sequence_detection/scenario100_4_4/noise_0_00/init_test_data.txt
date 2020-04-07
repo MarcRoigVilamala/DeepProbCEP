@@ -1,0 +1,7 @@
+initiatedAt(sequence0 = false, 4286).
+initiatedAt(sequence0 = false, 4287).
+initiatedAt(sequence3 = true, 4868).
+initiatedAt(sequence3 = true, 4869).
+initiatedAt(sequence2 = false, 7121).
+initiatedAt(sequence1 = false, 7530).
+initiatedAt(sequence2 = false, 9687).

@@ -16,7 +16,7 @@ with open('addition.pl') as f:
 network = MNIST_Net()
 net = Network(network, 'mnist_net', neural_predicate)
 net.optimizer = torch.optim.Adam(network.parameters(),lr = 0.001)
-model = Model(problog_string, [net], caching=False)
+model = Model(problog_string, [net], caching=True)
 optimizer = Optimizer(model, 2)
 
 train_model(model,queries, 1, optimizer,test_iter=1000,test=test_MNIST,snapshot_iter=10000)

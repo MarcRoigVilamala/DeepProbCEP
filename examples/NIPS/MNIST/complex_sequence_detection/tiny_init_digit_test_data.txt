@@ -1,0 +1,6 @@
+initiatedAt(sequence1 = false, 2).
+initiatedAt(sequence4 = true, 15).
+digit(9430, 3).
+digit(8655, 3).
+digit(7534, 8).
+digit(4371, 8).

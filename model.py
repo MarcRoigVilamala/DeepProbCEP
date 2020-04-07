@@ -1,3 +1,5 @@
+import io
+
 import problog
 import os
 from problog.logic import *
@@ -131,7 +133,8 @@ class Model(object):
                 self.parameters = pickle.load(f)
             for n in self.networks:
                 with zipf.open(n) as f:
-                    self.networks[n].load(f)
+                    buffer = io.BytesIO(f.read())
+                    self.networks[n].load(buffer)
 
     def store(self, object):
         self.obj_store.append(object)
@@ -142,3 +145,7 @@ class Model(object):
 
     def clear(self):
         self.obj_store = []
+
+    def clear_networks(self):
+        for network in self.networks.values():
+            network.clear()

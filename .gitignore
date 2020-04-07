@@ -227,3 +227,5 @@ __pycache__/
 *.bk
 
 sdd/
+
+/noise_?_??/

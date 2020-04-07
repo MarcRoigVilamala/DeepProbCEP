@@ -1,0 +1,10 @@
+multilabel(0, _).
+multilabel(1, _).
+multilabel(2, _).
+multilabel(3, _).
+multilabel(4, _).
+multilabel(5, _).
+multilabel(6, _).
+multilabel(7, _).
+multilabel(8, _).
+multilabel(9, _).

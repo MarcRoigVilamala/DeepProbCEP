@@ -1,0 +1,268 @@
+ssh://roigvilamalam@dais-2.admin.cf.ac.uk:22/home/roigvilamalam/.pyenv/versions/sound/bin/python -u /home/roigvilamalam/projects/deepproblog/examples/NIPS/UrbanSounds8K/ShotsDetection/run.py
+/home/roigvilamalam/.pyenv/versions/sound/lib/python3.6/site-packages/pandas/compat/__init__.py:85: UserWarning: Could not import the lzma module. Your installed Python is incomplete. Attempting to use lzma compression will result in a RuntimeError.
+  warnings.warn(msg)
+Training for 10 epochs (9390 iterations).
+Epoch 1
+Iteration:  500 	Average Loss:  1.146597125683599
+Writing snapshot to ShotsDetectionSnapshots/model_iter_000939.mdl
+100%|████████████████████████████████████████| 303/303 [00:02<00:00, 136.88it/s]
+shots
+[[97  3]
+ [25 82]]
+F1 shots: [0.87387387 0.85416667]
+Accuracy shots: 0.8647342995169082
+/home/roigvilamalam/projects/deepproblog/test_utils.py:44: RuntimeWarning: invalid value encountered in true_divide
+  recall = tp / (tp + fn)
+/home/roigvilamalam/projects/deepproblog/test_utils.py:43: RuntimeWarning: invalid value encountered in true_divide
+  precision = tp / (tp + fp)
+initiatedAt
+[[ 0  0  0  0  0  0  0  0  0  0  0]
+ [20 29  0  0  0  0  3  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 1  0  0  0  0  0 43  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]]
+F1 initiatedAt: [       nan 0.71604938        nan        nan        nan        nan
+ 0.95555556        nan        nan        nan        nan]
+Accuracy initiatedAt: 0.75
+Epoch time:  16.466559410095215
+Epoch 2
+Iteration:  1000 	Average Loss:  0.9497927221780097
+Iteration:  1500 	Average Loss:  0.8250071779256722
+Writing snapshot to ShotsDetectionSnapshots/model_iter_001878.mdl
+100%|████████████████████████████████████████| 303/303 [00:02<00:00, 137.13it/s]
+shots
+[[96  4]
+ [12 95]]
+F1 shots: [0.92307692 0.9223301 ]
+Accuracy shots: 0.9227053140096618
+initiatedAt
+[[ 0  0  0  0  0  0  0  0  0  0  0]
+ [11 41  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 2  0  0  0  0  0 42  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]]
+F1 initiatedAt: [       nan 0.88172043        nan        nan        nan        nan
+ 0.97674419        nan        nan        nan        nan]
+Accuracy initiatedAt: 0.8645833333333334
+Epoch time:  16.376573085784912
+Epoch 3
+Iteration:  2000 	Average Loss:  0.7415275006817854
+Iteration:  2500 	Average Loss:  0.7138617165036644
+Writing snapshot to ShotsDetectionSnapshots/model_iter_002817.mdl
+100%|████████████████████████████████████████| 303/303 [00:02<00:00, 138.89it/s]
+shots
+[[84 16]
+ [11 96]]
+F1 shots: [0.86153846 0.87671233]
+Accuracy shots: 0.8695652173913043
+initiatedAt
+[[ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 9 43  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [12  1  0  0  0  0 31  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]]
+F1 initiatedAt: [       nan 0.89583333        nan        nan        nan        nan
+ 0.82666667        nan        nan        nan        nan]
+Accuracy initiatedAt: 0.7708333333333334
+Epoch time:  15.827294826507568
+Epoch 4
+Iteration:  3000 	Average Loss:  0.7325645911618174
+Iteration:  3500 	Average Loss:  0.6373737131252365
+Writing snapshot to ShotsDetectionSnapshots/model_iter_003756.mdl
+100%|████████████████████████████████████████| 303/303 [00:02<00:00, 139.91it/s]
+shots
+[[80 20]
+ [ 8 99]]
+F1 shots: [0.85106383 0.87610619]
+Accuracy shots: 0.8647342995169082
+initiatedAt
+[[ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 9 43  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [12  2  0  0  0  0 30  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]]
+F1 initiatedAt: [       nan 0.88659794        nan        nan        nan        nan
+ 0.81081081        nan        nan        nan        nan]
+Accuracy initiatedAt: 0.7604166666666666
+Epoch time:  15.943205833435059
+Epoch 5
+Iteration:  4000 	Average Loss:  0.6780433369169897
+Iteration:  4500 	Average Loss:  0.6214440461343179
+Writing snapshot to ShotsDetectionSnapshots/model_iter_004695.mdl
+100%|████████████████████████████████████████| 303/303 [00:02<00:00, 138.11it/s]
+shots
+[[99  1]
+ [23 84]]
+F1 shots: [0.89189189 0.875     ]
+Accuracy shots: 0.8840579710144928
+initiatedAt
+[[ 0  0  0  0  0  0  0  0  0  0  0]
+ [17 33  0  0  0  0  2  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0 44  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]]
+F1 initiatedAt: [       nan 0.77647059        nan        nan        nan        nan
+ 0.97777778        nan        nan        nan        nan]
+Accuracy initiatedAt: 0.8020833333333334
+Epoch time:  15.770102500915527
+Epoch 6
+Iteration:  5000 	Average Loss:  0.5966342645432254
+Iteration:  5500 	Average Loss:  0.5565088369648723
+Writing snapshot to ShotsDetectionSnapshots/model_iter_005634.mdl
+100%|████████████████████████████████████████| 303/303 [00:02<00:00, 138.33it/s]
+shots
+[[86 14]
+ [14 93]]
+F1 shots: [0.86       0.86915888]
+Accuracy shots: 0.8647342995169082
+initiatedAt
+[[ 0  0  0  0  0  0  0  0  0  0  0]
+ [12 40  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 9  1  0  0  0  0 34  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]]
+F1 initiatedAt: [       nan 0.86021505        nan        nan        nan        nan
+ 0.87179487        nan        nan        nan        nan]
+Accuracy initiatedAt: 0.7708333333333334
+Epoch time:  16.065349340438843
+Epoch 7
+Iteration:  6000 	Average Loss:  0.5451450267284856
+Iteration:  6500 	Average Loss:  0.5730189319704363
+Writing snapshot to ShotsDetectionSnapshots/model_iter_006573.mdl
+100%|████████████████████████████████████████| 303/303 [00:02<00:00, 140.03it/s]
+shots
+[[84 16]
+ [12 95]]
+F1 shots: [0.85714286 0.87155963]
+Accuracy shots: 0.8647342995169082
+initiatedAt
+[[ 0  0  0  0  0  0  0  0  0  0  0]
+ [12 40  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [13  0  0  0  0  0 31  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]]
+F1 initiatedAt: [       nan 0.86956522        nan        nan        nan        nan
+ 0.82666667        nan        nan        nan        nan]
+Accuracy initiatedAt: 0.7395833333333334
+Epoch time:  15.944300889968872
+Epoch 8
+Iteration:  7000 	Average Loss:  0.5013883344588571
+Iteration:  7500 	Average Loss:  0.5816994118073141
+Writing snapshot to ShotsDetectionSnapshots/model_iter_007512.mdl
+100%|████████████████████████████████████████| 303/303 [00:02<00:00, 139.32it/s]
+shots
+[[ 73  27]
+ [  7 100]]
+F1 shots: [0.81111111 0.85470085]
+Accuracy shots: 0.8357487922705314
+initiatedAt
+[[ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 7 45  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [16  4  0  0  0  0 24  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]]
+F1 initiatedAt: [       nan 0.89108911        nan        nan        nan        nan
+ 0.70588235        nan        nan        nan        nan]
+Accuracy initiatedAt: 0.71875
+Epoch time:  15.900696754455566
+Epoch 9
+Iteration:  8000 	Average Loss:  0.5140778886215251
+Writing snapshot to ShotsDetectionSnapshots/model_iter_008451.mdl
+100%|████████████████████████████████████████| 303/303 [00:02<00:00, 141.21it/s]
+shots
+[[85 15]
+ [13 94]]
+F1 shots: [0.85858586 0.87037037]
+Accuracy shots: 0.8647342995169082
+initiatedAt
+[[ 0  0  0  0  0  0  0  0  0  0  0]
+ [12 40  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [13  0  0  0  0  0 31  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]]
+F1 initiatedAt: [       nan 0.86956522        nan        nan        nan        nan
+ 0.82666667        nan        nan        nan        nan]
+Accuracy initiatedAt: 0.7395833333333334
+Epoch time:  16.13715410232544
+Epoch 10
+Iteration:  8500 	Average Loss:  0.45155788207726205
+Iteration:  9000 	Average Loss:  0.491206297831807
+Writing snapshot to ShotsDetectionSnapshots/model_iter_009390.mdl
+100%|████████████████████████████████████████| 303/303 [00:02<00:00, 139.08it/s]
+shots
+[[67 33]
+ [ 8 99]]
+F1 shots: [0.76571429 0.82845188]
+Accuracy shots: 0.8019323671497585
+initiatedAt
+[[ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 8 44  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [17  5  0  0  0  0 22  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0]]
+F1 initiatedAt: [       nan 0.87128713        nan        nan        nan        nan
+ 0.66666667        nan        nan        nan        nan]
+Accuracy initiatedAt: 0.6875
+Epoch time:  15.906599283218384
+
+Process finished with exit code 0
