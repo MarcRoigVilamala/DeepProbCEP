@@ -9,8 +9,8 @@ Neural Probabilistic Logic Programming](https://arxiv.org/abs/1805.10872) in the
 
  * Slight changes on how the training of the neural network is performed.
  * Code has been added to perform CEP on:
-  * [MNIST digits](http://yann.lecun.com/exdb/mnist/)
-  * [Urban Sounds 8K](https://urbansounddataset.weebly.com/urbansound8k.html)
+   * [MNIST digits](http://yann.lecun.com/exdb/mnist/)
+   * [Urban Sounds 8K](https://urbansounddataset.weebly.com/urbansound8k.html)
 
 # DeepProbLog
 
